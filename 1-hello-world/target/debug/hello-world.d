@@ -1,0 +1,1 @@
+/Users/coderpotter/storage/Projects/rust/the-rust-programming-language-book/1-hello-world/target/debug/hello-world: /Users/coderpotter/storage/Projects/rust/the-rust-programming-language-book/1-hello-world/src/main.rs
