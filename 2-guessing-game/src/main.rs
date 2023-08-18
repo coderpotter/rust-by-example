@@ -1,3 +1,4 @@
+use colored::*;
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
@@ -26,10 +27,10 @@ fn main() {
         };
         match guess.cmp(&secret_number) {
             // cmp is a method of u32 to compare guess and secret_number
-            Ordering::Less => println!("Too small!"), // Ordering is an enum with variants Less, Greater, and Equal
-            Ordering::Greater => println!("Too big!"),
+            Ordering::Less => println!("{}", "Too small!".red()), // Ordering is an enum with variants Less, Greater, and Equal
+            Ordering::Greater => println!("{}", "Too big!".red()),
             Ordering::Equal => {
-                println!("You win!");
+                println!("{}", "You win!".green());
                 break; // break out of loop when guess is correct
             }
         }
